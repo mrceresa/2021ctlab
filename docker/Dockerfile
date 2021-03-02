@@ -22,4 +22,6 @@ RUN dos2unix /trun && dos2unix /setup.sh && chmod +x /setup.sh && /setup.sh && r
 
 WORKDIR $ROS_WORKSPACE
 
+RUN mkdir $ROS_WORKSPACE/src/mycode
+
 ENTRYPOINT ["/trun"]
